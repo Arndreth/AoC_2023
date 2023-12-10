@@ -25,10 +25,12 @@ public:
 
 protected:
 
-    void ReportAnswer(int answer) const;
+    void ReportAnswer(const std::string& answerHeader, long answer) const;
 
     int _day = -1;
     std::unique_ptr<IFileReader> fileManager;
+
+    int lineNumber = 0;
 
 
 };

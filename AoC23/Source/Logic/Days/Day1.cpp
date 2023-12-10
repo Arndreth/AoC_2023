@@ -1,5 +1,5 @@
 ﻿#include "Day1.h"
-
+#include "../Utils.h"
 #include <array>
 
 /*
@@ -15,14 +15,12 @@ void Day1::Run()
     std::array<int, contents.size()> rawCalibrations{};
     int lineIndex = 0;
     
-    for (const std::string& currentLine : contents)
+    for(const std::string& line: contents)
     {
-        if (currentLine.length() == 0)
-            continue;
-
-        const int size = static_cast<int>(currentLine.size());        
-        const char a = GetDigit(currentLine, 0, 1);
-        const char b = GetDigit(currentLine,  size - 1, -1);
+        VALIDATE_LINE(line)
+        const int size = static_cast<int>(line.size());        
+        const char a = GetDigit(line, 0, 1);
+        const char b = GetDigit(line,  size - 1, -1);
         
         std::string calibration = std::string() + a + b;
         rawCalibrations[lineIndex++] = std::stoi(calibration);
@@ -39,7 +37,7 @@ void Day1::Run()
         lineIndex--;
     }
 
-    ReportAnswer(finalOutput);    
+    ReportAnswer("Calibration Value", finalOutput);    
 }
 
 char Day1::GetDigit(const std::string& line, const int start, const int direction)

@@ -230,6 +230,7 @@
       <LinkCompiled>true</LinkCompiled>
     </ClCompile>
     <ClCompile Include="Source\Logic\Days\Day1.cpp" />
+    <ClCompile Include="Source\Logic\Days\Day2.cpp" />
     <ClCompile Include="Source\Logic\FileManager.cpp">
       <RuntimeLibrary>MultiThreadedDebugDll</RuntimeLibrary>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
@@ -308,13 +309,21 @@
     <ClInclude Include="Source\Interfaces\IFileReader.h" />
     <ClInclude Include="Source\Logic\Day.h" />
     <ClInclude Include="Source\Logic\Days\Day1.h" />
+    <ClInclude Include="Source\Logic\Days\Day2.h" />
     <ClInclude Include="Source\Logic\FileManager.h" />
+    <ClInclude Include="Source\Logic\Utils.h" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="DayInputs\Actual\Day1.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="DayInputs\Actual\Day2.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="DayInputs\Test\Day1.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="DayInputs\Test\Day2.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
