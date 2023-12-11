@@ -9,7 +9,7 @@ On each line, the calibration value can be found by combining the first digit an
 
 void Day1::Run()
 {
-    auto contents = fileManager->GetFileAsArray(_day);
+    const auto contents = fileManager->GetFileAsArray(_day);
 
     // for each line of the code, check first and last digit.
     std::array<int, contents.size()> rawCalibrations{};
