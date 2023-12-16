@@ -11,3 +11,6 @@
 #define VALIDATE_LINE(line) \
     lineNumber++; \
     if (line.length() == 0) continue; \
+
+#define GET_FILE_ARRAY(testInput) \
+    auto contents = fileManager->GetFileAsArray(_day, testInput); \

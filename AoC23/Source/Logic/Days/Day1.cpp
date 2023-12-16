@@ -1,7 +1,9 @@
 ﻿#include "Day1.h"
 #include "../Utils.h"
 #include <array>
+#include <string>
 
+using namespace std;
 /*
 The newly-improved calibration document consists of lines of text; each line originally contained a specific calibration value that the Elves now need to recover.
 On each line, the calibration value can be found by combining the first digit and the last digit (in that order) to form a single two-digit number.
@@ -23,7 +25,7 @@ void Day1::Run()
         const char b = GetDigit(line,  size - 1, -1);
         
         std::string calibration = std::string() + a + b;
-        rawCalibrations[lineIndex++] = std::stoi(calibration);
+        rawCalibrations[lineIndex++] = stoi(calibration);
     }
 
     // go back a line

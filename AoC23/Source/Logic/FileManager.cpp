@@ -3,12 +3,6 @@
 #include <array>
 #include <fstream>
 #include <memory>
-#include "../Interfaces/IFileReader.h"
-
-std::unique_ptr<IFileReader> get_file_reader()
-{
-    return std::make_unique<FileManager>();
-}
 
 std::string FileManager::GetFileContents(int dayNumber, bool testInput) const
 {

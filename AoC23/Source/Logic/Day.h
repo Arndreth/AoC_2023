@@ -2,9 +2,7 @@
 #include <iostream>
 #include <map>
 #include <memory>
-#include <xstring>
 
-#include "FileManager.h"
 #include "../Interfaces/IFileReader.h"
 
 typedef std::map<std::string, class D> day_map; // fighter of the night_map
@@ -19,13 +17,13 @@ public:
         _day = day;
         // depending on logic, we run certain days.
     }
-    virtual ~Day() = default;
 
-    virtual void Run();
+    virtual void Run() {}
 
 protected:
 
     void ReportAnswer(const std::string& answerHeader, long answer) const;
+    void ReportAnswerLL(const std::string& answerHeader, long long answer) const;
 
     int _day = -1;
     std::unique_ptr<IFileReader> fileManager;
@@ -34,5 +32,3 @@ protected:
 
 
 };
-
-std::unique_ptr<Day> create_day(int day);

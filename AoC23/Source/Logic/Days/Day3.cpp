@@ -3,6 +3,7 @@
 #include "../Utils.h"
 #include <array>
 #include <list>
+#include <string>
 
 void Day3::Run()
 {
