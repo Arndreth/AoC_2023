@@ -31,7 +31,7 @@ void Day3::Run()
                     part->NumberSize++;
                 } while (isdigit(line[offset]));
                 
-                int val = std::stoi(temp);
+                const int val = std::stoi(temp);
                 part->X  = offset-1;
                 part->Y = lineNumber;
                 part->PartValue = val;

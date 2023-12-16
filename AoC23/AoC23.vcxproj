@@ -232,6 +232,7 @@
     <ClCompile Include="Source\Logic\Days\Day1.cpp" />
     <ClCompile Include="Source\Logic\Days\Day2.cpp" />
     <ClCompile Include="Source\Logic\Days\Day3.cpp" />
+    <ClCompile Include="Source\Logic\Days\Day4.cpp" />
     <ClCompile Include="Source\Logic\FileManager.cpp">
       <RuntimeLibrary>MultiThreadedDebugDll</RuntimeLibrary>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
@@ -312,6 +313,7 @@
     <ClInclude Include="Source\Logic\Days\Day1.h" />
     <ClInclude Include="Source\Logic\Days\Day2.h" />
     <ClInclude Include="Source\Logic\Days\Day3.h" />
+    <ClInclude Include="Source\Logic\Days\Day4.h" />
     <ClInclude Include="Source\Logic\FileManager.h" />
     <ClInclude Include="Source\Logic\Utils.h" />
   </ItemGroup>
@@ -323,6 +325,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="DayInputs\Actual\Day3.txt" />
+    <Content Include="DayInputs\Actual\Day4.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="DayInputs\Test\Day1.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -330,6 +335,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="DayInputs\Test\Day3.txt" />
+    <Content Include="DayInputs\Test\Day4.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
